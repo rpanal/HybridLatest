@@ -2,6 +2,7 @@ numpy==2.1.2
 pandas==2.2.3
 pyodbc==5.2.0
 SQLAlchemy==2.0.36
+SQLAlchemy-access==2.0.3
 streamlit==1.39.0
 urllib3==2.2.3
 mssql==1.0.1
