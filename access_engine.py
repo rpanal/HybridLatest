@@ -29,10 +29,10 @@ if st.button("Save!"):
 
     with engine.connect() as cnn:
         relatefile = pd.read_sql(relate,cnn)
-        result = cnn.execute(sql,params)
+       # result = cnn.execute(sql,params)
         item = (relatefile['username'])
         st.write(item)
-        cnn.commit()
+        #cnn.commit()
         st.write("You have been added!")
 else:
     st.write("Click save to added")
