@@ -5,4 +5,3 @@ python-dateutil==2.9.0.post0
 SQLAlchemy==2.0.36
 streamlit==1.39.0
 typing_extensions==4.12.2
-mssql==1.0.1P
