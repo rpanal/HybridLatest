@@ -35,8 +35,8 @@ rich==13.9.3
 rpds-py==0.20.0
 six==1.16.0
 smmap==5.0.1
-SQLAlchemy==2.0.36
-sqlalchemy-access==2.0.3
+SQLAlchemy==2.0.0
+sqlalchemy-access==2.0.36
 streamlit==1.39.0
 tenacity==9.0.0
 toml==0.10.2
