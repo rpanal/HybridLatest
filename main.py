@@ -14,8 +14,8 @@ def main():
     st.title("My Streamlit Web App")
     st.write("Welcome to my web app!")
 
-    conn = pyodbc.connect(r'Driver={Microsoft Access Driver (*.mdb, *.accdb)};DBQ=CCLPIHN_be.accdb;')
-
+    conn = pyodbc.connect(r'Driver={Microsoft Access Driver (*.mdb, *.accdb)};DBQ=data/CCLPIHN_be.accdb;')
+    #conn = pyodbc.connect(r'Driver={Microsoft Access Driver (*.mdb, *.accdb)};DBQ=data/CCLPIHN_be.accdb;')
     relate = 'SELECT username, password FROM users ORDER BY username;'
 
     relatefile = pd.read_sql(relate,conn,)
