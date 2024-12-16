@@ -1,39 +1,26 @@
-from sqlalchemy import ColumnElement, true
+
 import streamlit as st
-import pyodbc
 import pandas as pd
 import numpy as np
 import streamlit as st
-from sqlalchemy import create_engine
-import sqlite3 
-
-
-#from multipage import MultiPage
+from pages import genealogy,logindb,login
 
 def main():
-    st.title("My Streamlit Web App")
-    st.write("Welcome to my web app!")
 
-    conn = pyodbc.connect(r'Driver={Microsoft Access Driver (*.mdb, *.accdb)};DBQ=data/CCLPIHN_be.accdb;')
-    #conn = pyodbc.connect(r'Driver={Microsoft Access Driver (*.mdb, *.accdb)};DBQ=data/CCLPIHN_be.accdb;')
-    relate = 'SELECT username, password FROM users ORDER BY username;'
-
-    relatefile = pd.read_sql(relate,conn,)
-
-# Main
-
-
-# Title with Markdown formatting
-
-st.markdown("# CCLPI - Hybrid ")
+    st.markdown("# CCLPI - Hybrid ")
 
 # Add a title to the sidebar
 
 # Add a selectbox to the sidebar
 option = st.sidebar.selectbox(
     "Select an option:",
-    ["Option 1", "Option 2", "Option 3"]
+    ["Log In", "Genelogy", "Option 3"]
     )
+if option.index == 0:
+    logindb
+if option.index == 1:
+    genealogy
+
 if __name__ == "__main__":
     
     main() 
@@ -43,9 +30,9 @@ if __name__ == "__main__":
 
 #app = MultiPage()
 
+
 # Add pages to the app
-#app.add_page("Page 1", page1.app)
-#app.add_page("Page 2", page2.app)
+
 
 # Run the app
 #app.run()
