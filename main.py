@@ -3,7 +3,7 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import streamlit as st
-from pages import genealogy,logindb,login
+from pages import genealogy,logindb
 
 def main():
 
