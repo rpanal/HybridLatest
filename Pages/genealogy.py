@@ -1,7 +1,6 @@
 import streamlit as st
 import sqlite3
 import pandas as pd
-import pyodbc 
 
 conn = sqlite3.connect('./data/hybrid.db')
 
@@ -26,10 +25,10 @@ if logbutton:
         st.image("./pix/user.png",caption = list(relatefile['rightusername']),width=150)   
     level2l,level2lc,level1l, level0c,level1r,level2rc, level2r = st.columns(7)
     with level2l:
-        st.image("./pix/user.png", use_container_width = True )
+        st.image("./pix/user.png",width=130)
     with level2r:
-        st.image("./pix/user.png", use_container_width = True)
+        st.image("./pix/user.png",width=130)
     with level1r:
-        st.image("./pix/user.png", use_container_width = True )
+        st.image("./pix/user.png",width=130)
     with level1l:
-        st.image("./pix/user.png", use_container_width = True)
+        st.image("./pix/user.png",width=130)
