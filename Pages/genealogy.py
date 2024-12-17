@@ -2,7 +2,7 @@ import streamlit as st
 import sqlite3
 import pandas as pd
 
-conn = sqlite3.connect('./data/hybrid.db')
+conn = sqlite3.connect('hybrid.db')
 
 current_user = ""
 with st.sidebar:
